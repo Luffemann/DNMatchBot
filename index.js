@@ -9,7 +9,7 @@ const client = new Client({
   ],
 });
 
-const TOKEN = 'INDSÆT_DIN_BOT_TOKEN_HER';
+const TOKEN = process.env.TOKEN;
 
 client.once('ready', () => {
   console.log(`✅ Botten er online som ${client.user.tag}`);
