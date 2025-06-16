@@ -27,7 +27,7 @@ async function sendDM(discordId, besked) {
 }
 
 client.on('ready', () => {
-  const testId = 'INDSÆT_DISCORD_ID_HER';
+  const testId = '681176148905820211';
   sendDM(testId, 'Hej! Dette er din første besked fra DNMatchBot 💚');
 });
 
