@@ -1,4 +1,6 @@
+require('dotenv').config();
 const { Client, GatewayIntentBits } = require('discord.js');
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -9,10 +11,9 @@ const client = new Client({
   ],
 });
 
-const TOKEN = process.env.TOKEN;
-
 client.once('ready', () => {
   console.log(`✅ Botten er online som ${client.user.tag}`);
+  sendDM(process.env.TEST_DISCORD_ID, '✅ DNMatchBot er startet og virker som den skal!');
 });
 
 async function sendDM(discordId, besked) {
@@ -26,9 +27,5 @@ async function sendDM(discordId, besked) {
   }
 }
 
-client.on('ready', () => {
-  const testId = '681176148905820211';
-  sendDM(testId, 'Hej! Dette er din første besked fra DNMatchBot 💚');
-});
+client.login(process.env.TOKEN);
 
-client.login(TOKEN);
