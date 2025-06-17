@@ -1,8 +1,8 @@
 {
-  "name": "dnmatchbot",
-  "version": "1.0.0",
-  "main": "index.js",
   "dependencies": {
-    "discord.js": "^14.0.0"
+    "discord.js": "^13.17.1"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
