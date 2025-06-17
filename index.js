@@ -13,7 +13,7 @@ const client = new Client({
 
 client.once('ready', () => {
   console.log(`✅ Botten er online som ${client.user.tag}`);
-  sendDM(process.env.TEST_DISCORD_ID, '✅ DNMatchBot er startet og virker som den skal!');
+  
 });
 
 async function sendDM(discordId, besked) {
