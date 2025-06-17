@@ -1,4 +1,4 @@
-onst { Client, Intents } = require('discord.js');
+const { Client, Intents } = require('discord.js');
 
 console.log('TOKEN er:', process.env.TOKEN ? 'sat' : 'IKKE SAT'); 
 console.log('TOKEN længde:', process.env.TOKEN ? process.env.TOKEN.length : 'N/A');
